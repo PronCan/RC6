@@ -92,6 +92,9 @@
                 android:text="로그인"
                 android:layout_margin="10dp"
                 android:id="@+id/login_button"
+                android:background="@drawable/login_xml"
+                android:textColor="#ADADAD"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -139,26 +142,45 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/kakao_login_xml"
+            android:drawableLeft="@drawable/kakao_logo"
             android:text="카카오로 로그인"
+            android:textColor="#2B1718"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/naver_login_xml"
+            android:drawableLeft="@drawable/naver_logo"
             android:text="네이버로 로그인"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="60dp"
             />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/google_login_xml"
+            android:drawableLeft="@drawable/google_logo"
             android:text="Google로 로그인"
+            android:textColor="#585858"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="55dp"
             />
 
         <LinearLayout
