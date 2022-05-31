@@ -45,18 +45,46 @@
                 android:layout_gravity="right"
                 />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="운서동"
-                android:textColor="@color/orange"
-                android:textStyle="bold"
-                android:textSize="22sp"
-                android:layout_marginLeft="10dp"
-                />
+                android:orientation="horizontal"
+                android:id="@+id/main_select_area_button"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ㅁㅁ동"
+                    android:textColor="@color/def_font_color"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/ic_down"
+                    android:layout_gravity="left"
+                    />
+            </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
-
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"
+            />
     </LinearLayout>
 
+    <
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_bottom_navigation_view"
+        app:itemBackground="@color/white"
+        app:menu="@menu/main_bottom_navigation_view"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </LinearLayout>
