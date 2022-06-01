@@ -6,6 +6,11 @@ plugins {
 android {
     compileSdk 32
 
+    // 뷰바인딩
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "moe.proncan.week3"
         minSdk 25
@@ -32,6 +37,9 @@ android {
 }
 
 dependencies {
+    // Glide 사용 추가
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
