@@ -8,6 +8,7 @@ android {
 
     // 뷰바인딩
     buildFeatures {
+        dataBinding = true
         viewBinding = true
     }
 
