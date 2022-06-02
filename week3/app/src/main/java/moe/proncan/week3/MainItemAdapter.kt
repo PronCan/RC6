@@ -11,7 +11,6 @@ import com.bumptech.glide.Glide
 
 class MainItemAdapter(private val context: Context):
     RecyclerView.Adapter<MainItemAdapter.ViewHolder>() {
-
     // 리스트 개수
     var list = mutableListOf<MainItemData>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -52,6 +51,7 @@ class MainItemAdapter(private val context: Context):
             tvChatCount.text = item.chatCnt
             Glide.with(itemView).load(item.chatImg).into(ivChatCount)
         }
+
     }
 }
 
