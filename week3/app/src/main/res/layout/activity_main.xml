@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -24,51 +25,48 @@
                 android:id="@+id/main_notice_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@color/white"
-                app:srcCompat="@drawable/ic_add_car"
                 android:layout_gravity="right"
-                />
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_notice" />
+
             <ImageButton
                 android:id="@+id/main_category_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@color/white"
-                app:srcCompat="@drawable/ic_add_car"
                 android:layout_gravity="right"
-                />
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_menu" />
+
             <ImageButton
                 android:id="@+id/main_search_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@color/white"
-                app:srcCompat="@drawable/ic_add_car"
                 android:layout_gravity="right"
-                />
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_search" />
 
             <LinearLayout
+                android:id="@+id/main_select_area_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/main_select_area_button"
-                >
+                android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ㅁㅁ동"
-                    android:textColor="@color/def_font_color"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
                     android:layout_marginLeft="10dp"
-                    />
+                    android:text="운서동"
+                    android:textColor="@color/def_font_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
                 <ImageButton
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/ic_down"
                     android:layout_gravity="left"
-                    />
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/ic_down" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -97,6 +95,7 @@
         android:id="@+id/main_bottom_navigation_view"
         app:itemBackground="@color/white"
         app:menu="@menu/main_bottom_navigation_view"
+        app:labelVisibilityMode="labeled"
         >
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
