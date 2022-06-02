@@ -19,7 +19,9 @@ class MainActivity : AppCompatActivity() {
     private val list = mutableListOf<MainItemData>()
 
     lateinit var mainRecyclerView: RecyclerView
-    lateinit var bottomNavigationView: BottomNavigationView
+    val bottomNavigationView: BottomNavigationView by lazy {
+        findViewById(R.id.main_bottom_navigation_view)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        mainBinding = ActivityMainBinding.inflate(layoutInflater)
         mainRecyclerView = findViewById(R.id.main_recycler_view)
-        bottomNavigationView = findViewById(R.id.main_bottom_navigation_view)
 
         init()
+        initFragment()
     }
 
     private fun init() {
@@ -68,7 +70,13 @@ class MainActivity : AppCompatActivity() {
 //                list[i].chatCnt
 //            }
 //        }
-        bottomNavigationView.
+
+    }
+
+    private fun initFragment() {
+        supportFragmentManager.beginTransaction().add(bottomNavigationView.id, MainFragment()).commit()
+
+
     }
 
 }

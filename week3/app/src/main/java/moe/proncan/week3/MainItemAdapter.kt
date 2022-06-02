@@ -30,7 +30,7 @@ class MainItemAdapter(private val context: Context):
         private val tvArea: TextView = itemView.findViewById(R.id.item_main_area)
         private val tvTime: TextView = itemView.findViewById(R.id.item_main_time)
         private val tvPrice: TextView = itemView.findViewById(R.id.item_main_price)
-        // 0이면 안보이게
+        // 0이면 안보이게 해야함
         private val tvLikeCount: TextView = itemView.findViewById(R.id.item_main_chat_count)
         private val ivLikeCount: ImageView = itemView.findViewById(R.id.item_main_chat)
         private val tvChatCount: TextView = itemView.findViewById(R.id.item_main_like_count)
