@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val list = mutableListOf<MainItemData>()
 
     lateinit var mainRecyclerView: RecyclerView
+    lateinit var bottomNavigationView: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,12 +27,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 //        mainBinding = ActivityMainBinding.inflate(layoutInflater)
         mainRecyclerView = findViewById(R.id.main_recycler_view)
-        var bottomNavigationView: BottomNavigationView = findViewById(R.id.main_bottom_navigation_view)
+        bottomNavigationView = findViewById(R.id.main_bottom_navigation_view)
 
-        initRecyclerView()
+        init()
     }
 
-    private fun initRecyclerView() {
+    private fun init() {
         mainItemAdapter = MainItemAdapter(this)
         val linearLayoutManager = LinearLayoutManager(this)
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
@@ -66,8 +67,8 @@ class MainActivity : AppCompatActivity() {
 //            if(list[i].chatCnt == "0") {
 //                list[i].chatCnt
 //            }
-//
 //        }
-
+        bottomNavigationView.
     }
+
 }
